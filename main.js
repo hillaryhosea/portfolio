@@ -1,3 +1,4 @@
+            //   skill transition
 
 const skillParElements = document.querySelectorAll('.skill-par');
 
@@ -22,4 +23,23 @@ for (const skillParElement of skillParElements) {
     skillParElement.style.backgroundColor = 'red';
   }
 }
+
+  // skill content navigation 
+
+ const tabLinks = document.querySelectorAll('.tab-links');
+ const tabContents = document.querySelectorAll('.tab-content')
+ 
+ function opentab (tabname) {
+
+  for (const tabLink of tabLinks ){
+    tabLink.classList.remove('active-link')
+  }
+
+  for (const tabContent of tabContents){
+    tabContent.classList.remove('active-tab')
+  }
+  event.target.classList.add('active-link');
+
+  document.getElementById(tabname).classList.add('active-tab');
+ }
 
