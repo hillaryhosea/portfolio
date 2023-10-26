@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>PortFolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ba3918b304.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -37,66 +38,118 @@
 
    <div class="about">
 
+    <div class="aboutImage">
     <img src="images/aboutPhoto.png" alt="aboutImage">
+    </div>
 
     <div class="aboutText">
       <h1>About Me</h1>
       <p>Welcome to my portfolio! I'm thrilled to share my journey and creative work with you.  I'm Hillary Hosea, a passionate Web Dev with a dedication to craft-centered web solution  that not only meet but exceed the expectation of your audience.Whether it's designing an intuitive user interface, optimizing for performance, or creating a seamless user journey, I'm committed to delivering web experiences that stand out in a crowded digital landscape. </p>
 
       <div class="about-menu">
-        <p class="tab-links active-link">Skills</p>
-        <p class="tab-links">Experice</p>
-        <p class="tab-links">Education</p>
-   </div>
-   <div class="Skills">
-    <div class="skill">
-      <div class="skill-name">html</div>
-      <div class="skill-bar">
-        <div class="skill-par" par="90%" style="max-width: 90%;" ></div>
+        <p class="tab-links active-link" onclick="opentab ('skills')">Skills</p>
+        <p class="tab-links" onclick="opentab ('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab ('education')">Education</p>
       </div>
-    </div>
-  </div>
-   <div class="Skills">
-    <div class="skill">
-      <div class="skill-name">css</div>
-      <div class="skill-bar">
-        <div class="skill-par" par="80%" style="max-width: 80%;" ></div>
-      </div>
-    </div>
-  </div>
-   <div class="Skills">
-    <div class="skill">
-      <div class="skill-name">javascript</div>
-      <div class="skill-bar">
-        <div class="skill-par" par="50%" style="max-width: 50%;" ></div>
-      </div>
-    </div>
-  </div>
-   <div class="Skills">
-    <div class="skill">
-      <div class="skill-name">react</div>
-      <div class="skill-bar">
-        <div class="skill-par" par="35%" style="max-width: 35%;" ></div>
-      </div>
-    </div>
-  </div>
-   <div class="Skills">
-    <div class="skill">
-      <div class="skill-name">wix</div>
-      <div class="skill-bar">
-        <div class="skill-par" par="30%" style="max-width: 30%;" ></div>
-      </div>
-    </div>
-  </div>
-   <div class="Skills">
-    <div class="skill">
-      <div class="skill-name">wordpress</div>
-      <div class="skill-bar">
-        <div class="skill-par" par="20%" style="max-width:20%;"  ></div>
-      </div>
-    </div>
-  </div>
 
+      
+        <div class="skills  active-tab  tab-content" id="skills">
+
+         <div class="skill">
+          <div class="skill-name">html</div>
+          <div class="skill-bar">
+            <div class="skill-par" style="max-width: 90%;" par="90%"></div>
+          </div>
+         </div> 
+
+         <div class="skill">
+          <div class="skill-name">css</div>
+          <div class="skill-bar">
+            <div class="skill-par" style="max-width: 80%;" par="80%"></div>
+          </div>
+         </div> 
+
+         <div class="skill">
+          <div class="skill-name">javascript</div>
+          <div class="skill-bar">
+            <div class="skill-par" style="max-width: 50%;" par="50%"></div>
+          </div>
+         </div> 
+
+         <div class="skill">
+          <div class="skill-name">react</div>
+          <div class="skill-bar">
+            <div class="skill-par" style="max-width: 35%;" par="35%"></div>
+          </div>
+         </div> 
+
+         <div class="skill">
+          <div class="skill-name">wix</div>
+          <div class="skill-bar">
+            <div class="skill-par" style="max-width: 30%;" par="30%"></div>
+          </div>
+         </div> 
+
+         <div class="skill">
+          <div class="skill-name">wordpress</div>
+          <div class="skill-bar">
+            <div class="skill-par" style="max-width: 20%;" par="20%"></div>
+          </div>
+         </div> 
+
+        </div>
+
+        <div class="experience  list  tab-content" id="experience">
+            <ul>
+              <li><span>currently  2023</span> <br> internship at konza cloud</li>
+              <li><span>2022 till date</span> <br>self studies </li>
+            </ul>
+        </div>
+
+        <div class="education  list  tab-content" id="education">
+          <ul>
+            <li><span>2022</span> <br> informatin technology at kabarak</li>
+            <li><span>2023</span> <br>specializing as a deveveloper at kabarak</li>
+          </ul>
+        </div>
+      </div>
+   </div>
+
+      <!-- my services -->
+      
+      <div class="services">
+        <h1>My services</h1>
+
+        <div class="container-service">
+
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h4>Web Design</h4>
+            <p>hello there am a web Design who offer services of web designing</p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h4>UI/X Design</h4>
+            <p>hello there am a ui/ux desgner who offer service to this design</p>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-wordpress"></i>
+            <h4>wordpress</h4>
+            <p>hello there am a wordpress desgner who offer service to this design</p>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-wix"></i>
+            <h4>wix</h4>
+            <p>hello there am a wix desgner who offer service to this design</p>
+          </div>
+
+        </div>
+     
+      
+  
   <script src="main.js" charset="UTF-8"></script>
 </body>
 </html>
