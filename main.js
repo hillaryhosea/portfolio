@@ -1,4 +1,21 @@
-            //   skill transition
+  // side menu 
+
+  const menuBar = document.getElementById ("menuBar")
+  const closeBtn = document.getElementsByClassName("fa-xmark")
+
+  function openMenu (){
+    menuBar.style.right="0"
+  }
+
+  function closeMenu (){
+    menuBar.style.right="-200px"
+    
+
+  }
+
+  
+ 
+ //   skill transition
 
 const skillParElements = document.querySelectorAll('.skill-par');
 
