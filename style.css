@@ -8,8 +8,8 @@
 
 body
 {
-  /* background-color: black; */
-  /* color: white; */
+  background-color: black;
+  color: white;
 }
 
 nav
@@ -103,7 +103,7 @@ transform: scale(1.5);
 
 .about
 {
-  margin: 10% 0  0  15%;
+  margin: 8% 0  0  15%;
 }
 
 .about h1{
@@ -111,14 +111,16 @@ transform: scale(1.5);
 }
 
 .about h3{
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 2rem;
   color: rgb(183, 182, 182);
   padding-top: 10px;
   padding-bottom: 20px ;
 }
 
 .about p{
-  line-height: 1.5em;
+  line-height: 2em;
+  font-size: large;
 }
 
 .container img 
@@ -129,7 +131,52 @@ transform: scale(1.5);
 
 
 
+.parts
+{
+  display: flex;
+  margin: 5% 0  0  15%;
+  align-items: center;
+  align-content: center;
+}
 
+
+.experience h1
+{
+  font-size: 2.5rem;
+  font-weight:500;
+  margin-bottom: 10%;
+}
+
+.experience ul 
+{
+  line-height: 2.5em;
+  list-style-type: none;
+}
+
+.ticks
+{
+  font-size: 10px;
+  color: grey;
+}
+
+.part-img
+{
+  margin: 0 3% 0 3%;
+}
+
+.skills-menu
+{
+  margin: 10% 20% 0 20%;
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.skills-menu p 
+{
+  font-size: 2em;
+  font-weight: 800;
+}
 
 
   /* ------------older ---------- */
