@@ -169,47 +169,53 @@ transform: scale(1.5);
   margin: 10% 20% 0 20%;
   display: flex;
   justify-content: space-around;
-  height: 100vh;
 }
 
 .skills-menu p 
 {
   font-size: 2em;
-  font-weight: 800;
+  /* font-weight: 800; */
 }
+
+.tab-links::after
+{
+  content: "";
+  position: absolute;
+  width: 0px;
+  background: red;
+  height: 3px;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+  cursor:pointer;
+}
+
+.tab-links.is-active::after
+{
+  width: 40px;
+}
+
+#level img 
+{
+margin: 10% 0 5% 25%;
+}
+
+.tab-content 
+{
+  display: none;
+}
+
+.tab-content.is-active 
+{
+  display: block;
+} 
+
+
 
 
   /* ------------older ---------- */
 
 
-
-
-.header-Text 
-{
-    text-align: center;
-    position: absolute;
-    margin: 8% 0 0 15%;
-    font-size: 20px;
-    font-size: 40px;
-}
-
-.header-Text p {
-    font-weight: 10;
-    font-size: 30px;
-    padding: 10px;
-  }
-  
-  .header-Text h2::before,
-  .header-Text h2::after
-   {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 40%;
-  }
   
   .header-Text h2::before
   {
@@ -230,36 +236,8 @@ transform: scale(1.5);
     }
   }
   
-  .header-Text span 
-  {
-    color: rgb(221, 74, 74);
-    font-weight: bold;
-  }
 
-  .header-Text img 
-  {
-    position: absolute;
-    /* background-color: red; */
-    margin: -25% 0 0 100% ;
 
-  }
-
-    /* about style */
-
-  /* .about 
-  {
-    display: flex;
-    flex-direction: row;
-    margin: 0  10% 5% 10% ;
-  }
-   */
-  /* .aboutImage 
-  {
-    width: 100%;
-    margin-right: 10%;
-  } */
-
- */
 
   .about img:hover
   {
@@ -295,22 +273,6 @@ transform: scale(1.5);
  }
    
 
-  .tab-links::after
-  {
-    content: "";
-    position: absolute;
-    width: 0;
-    background: red;
-    height: 3px;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-  }
-
-  .tab-links.active-link::after
-  {
-    width: 30px;
-  }
 
  .skill
  {
@@ -393,15 +355,7 @@ transform: scale(1.5);
   font-size: 14px;
 }
 
-.tab-content 
-{
-  display: none;
-}
 
-.tab-content.active-tab 
-{
-  display: block;
-}
 
 
 /* -----services ------*/

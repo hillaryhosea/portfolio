@@ -43,20 +43,26 @@ for (const skillParElement of skillParElements) {
 
   // skill content navigation 
 
- const tabLinks = document.querySelectorAll('.tab-links');
- const tabContents = document.querySelectorAll('.tab-content')
- 
- function opentab (tabname) {
 
-  for (const tabLink of tabLinks ){
-    tabLink.classList.remove('active-link')
-  }
+  const tabLinks = document.querySelectorAll('.tab-links')
+  const tabContents = document.querySelectorAll('.tab-content')
+  
 
-  for (const tabContent of tabContents){
-    tabContent.classList.remove('active-tab')
-  }
-  event.target.classList.add('active-link');
+  function opentab (tabname)
+  {
+    for (const tabLink of tabLinks)
+    {
+      tabLink.classList.remove('is-active')
+    }
+    for (const tabContent of tabContents)
+    {
+      tabContent.classList.remove('is-active');
+    }
 
-  document.getElementById(tabname).classList.add('active-tab');
- }
+    event.target.classList.add('is-active');
+    document.getElementById(tabname).classList.add('is-active');
+
+  };
+
+
 
