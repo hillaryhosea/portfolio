@@ -164,18 +164,7 @@ transform: scale(1.5);
   margin: 0 3% 0 3%;
 }
 
-.skills-menu
-{
-  margin: 10% 20% 0 20%;
-  display: flex;
-  justify-content: space-around;
-}
 
-.skills-menu p 
-{
-  font-size: 2em;
-  /* font-weight: 800; */
-}
 
 .tab-links::after
 {
@@ -273,12 +262,22 @@ margin: 10% 0 5% 25%;
  }
    
 
+ /* Skills section */
 
- .skill
- {
-  width: 100%;
-  margin: 10px 0;
- }
+ .skills {
+  max-width: 800px;
+  margin: auto;
+  padding-bottom: 50px ;
+}
+
+.about-menu
+{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
 
  .skill-name
  {
@@ -331,16 +330,7 @@ margin: 10% 0 5% 25%;
   border-radius: 2px;
 }
 
-@keyframes fillBar
- {
-    from{
-      width: 0;
-    }
 
-    to{
-      width: 100%;
-    }
-}
 
 .list li 
 {
@@ -358,11 +348,24 @@ margin: 10% 0 5% 25%;
 
 
 
+@keyframes fillBar
+ {
+    from{
+      width: 0;
+    }
+
+    to{
+      width: 100%;
+    }
+}
+
+
+
+
 /* -----services ------*/
 
 .services
 {
- /* background-color: red; */
  margin: 20px;
  align-content: center;
 }
@@ -370,9 +373,9 @@ margin: 10% 0 5% 25%;
 .container-service 
 {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px; */
   /* margin-left: 100px; */
   margin-top: 40px;
 }
@@ -380,7 +383,8 @@ margin: 10% 0 5% 25%;
 .services h1
 {
   font-size: 50px;
-  margin-left:30px ;
+  text-align: center ;
+  padding-bottom: 50px;
 }
 
 .container-service h4 
@@ -392,7 +396,7 @@ margin: 10% 0 5% 25%;
 .container-service p 
 {
   color: #f7f5f5;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
 }
 
 .container-service div 
@@ -426,13 +430,21 @@ margin: 10% 0 5% 25%;
   padding: 50px 0;
 }
 
+.portfolio h1
+{
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 40px;
+}
+
 .work-list
 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-  margin-top: 50px;
+  grid-gap: 40px;
   position: relative;
+  /* padding: 40px; */
+  padding: 60px;
 }
 
 .work
@@ -450,8 +462,6 @@ margin: 10% 0 5% 25%;
   height: 100%;
   transition: transform 0.5s ;
 }
-
-
 
 .layer 
 {
@@ -503,6 +513,39 @@ margin: 10% 0 5% 25%;
 {
   height: 100%;
 }
+
+ /* Work section */
+
+
+ .contact-left h1
+ {
+   padding:0px  0px 20px 30px ;
+   font-size: 30px;
+
+ }
+
+.containa {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+
+.contact-right form
+{
+  width: 100%;
+  
+}
+
 .contact-left
 {
   flex-basis: 35%;
@@ -525,9 +568,11 @@ margin: 10% 0 5% 25%;
  font-size: 25px;
 }
 
+
 .social-media-icons 
 {
   margin: 0 30px; 
+  padding: 15px 0 15px 0;
 }
 
 .social-media-icons a
@@ -542,20 +587,10 @@ margin: 10% 0 5% 25%;
 .social-media-icons a:hover
 {
   color: #ff004f;
-  /* transform: translateY(-15px); */
-  transform: translate(20px, -10%);
+  /* transform: translate(20px, -10%); */
 }
 
-.row
-{
-  display: flex;
-  flex-direction: row;
-}
 
-.contact-right form
-{
-  width: 100%;
-}
 
 form input, form textarea
 {
@@ -595,6 +630,8 @@ form input, form textarea
   background: #bf033b;
 }
 
+
+
 .copyRight
 {
   width: 100%;
@@ -602,12 +639,49 @@ form input, form textarea
   background-color: #424141;
   padding: 20px 0;
   margin-top: 30px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 
 /* ---------css for small screens ------- */
 
+
+/* Original CSS remains the same until media queries */
+
+/* Media Queries */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  nav ul {
+      margin-left: 15%;
+  }
+
+  nav ul li {
+      margin-left: 20px;
+  }
+
+  .about {
+      margin: 8% 0 0 10%;
+  }
+
+  .about h1 {
+      font-size: 4rem;
+  }
+
+  .container img {
+      width: 45%;
+  }
+
+  .work-list {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* Responsive Design */
+
+
+ 
 nav .fa-solid 
 {
   display: none;
@@ -680,6 +754,5 @@ nav .fa-solid
  }
 } 
  
-
   
   
